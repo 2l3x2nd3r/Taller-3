@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.movil.taller_3.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark">
+
+
+        <EditText
+            android:layout_width="351dp"
+            android:layout_height="64dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+            app:layout_constraintRight_toLeftOf="@+id/btn2"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn3"
+            app:layout_constraintRight_toLeftOf="@+id/btn3"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnplus"
+            app:layout_constraintRight_toLeftOf="@+id/btnplus"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="+"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnplus"
+            android:minWidth="48dip"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:onClick="operationClick"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:text="4"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
+            app:layout_constraintRight_toLeftOf="@+id/btn5"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintHorizontal_bias="0.8"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn6"
+            app:layout_constraintRight_toLeftOf="@+id/btn6"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn6"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnminus"
+            app:layout_constraintRight_toLeftOf="@+id/btnminus"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="-"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnminus"
+            android:minWidth="48dip"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnplus"
+            android:onClick="operationClick"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn7"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
+            app:layout_constraintRight_toLeftOf="@+id/btn8"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn8"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
+            app:layout_constraintRight_toLeftOf="@+id/btn9"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnmult"
+            app:layout_constraintRight_toLeftOf="@+id/btnmult"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnmult"
+            android:minWidth="48dip"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnminus"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:onClick="operationClick"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn0"
+            app:layout_constraintRight_toLeftOf="@+id/btnp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btnp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintHorizontal_bias="0.62"
+            android:onClick="numberClick"/>
+
+        <Button
+            android:text="."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnp"
+            android:onClick="numberClick"
+            app:layout_constraintRight_toLeftOf="@+id/btneq"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btneq"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp" />
+
+        <Button
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btndiv"
+            android:minWidth="48dip"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnmult"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            android:onClick="operationClick"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+        <Button
+            android:text="="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btneq"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btndiv"
+            app:layout_constraintRight_toLeftOf="@+id/btndiv"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:onClick="operate"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
